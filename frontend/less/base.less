@@ -1,0 +1,101 @@
+
+.container {
+    width: 100%;
+    font-size: 18px;
+    font-family: 'KaiTi';
+    .nav-box {
+        width: 100%;
+        height: 60px;
+        margin-bottom: 20px;
+        padding: 10px 25px;
+        line-height: 40px;
+        background-color: #252525;
+        color: #fff;
+        .img-box {
+            display: block;
+            width: 50px;
+            height: 40px;
+            img {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .nav-title {
+            display: inline-block;
+        }
+        .reload-col {
+            text-align: center;
+        }
+        .reload-btn {
+            &:hover {
+                cursor: pointer;
+                transition: transform .5s linear;
+                transform: rotate(270deg);
+            }
+        }
+    }
+    .search-box {
+        width: 100%;
+        height: 32px;
+    }
+    .list-box {
+        position: relative;
+        width: 100%;
+        min-height: 600px;
+        padding: 30px 8.5% 100px;
+        font-size: 14px;
+        .list-detail {
+            padding-bottom: 20px;
+            li {
+                min-height: 40px;
+                line-height: 20px;
+                margin-bottom: 20px;
+            }
+            .name {
+                padding: 10px;
+                text-align: center;
+                background-color: #252525;
+                color: #fff;
+            }
+            .detail {
+                padding: 10px;
+                color: #fff;
+            }
+            .job-url {
+                color: #db2ccd;
+                &:hover {
+                    color: rgb(160, 9, 247);
+                }
+            }
+        }
+    }
+    .empty-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 550px;
+        height: 110px;
+        background: #eee;
+        border-radius: 6px;
+        .title {
+            width: 100%;
+            height: 30px;
+            background: #252525;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+        }
+        .content {
+            width: 100%;
+            line-height: 70px;
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+}
+.high-light-span {
+    color: rgb(3, 253, 15);
+}
